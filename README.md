@@ -8,11 +8,11 @@ This README was created to share relevant info about the proyect
 
 ## Colors:
 
-- **Main:** #14549C
-- **Black:** #05284F
-- **Contrast:** #9C6B14
-- **White:** #3589E8
-- **Contrast2:** #4F3300
+- **Main:** #063978
+- **Black:** #01224A
+- **Contrast:** #C98200
+- **White:** #1D69C4
+- **Contrast2:** #5E3F05
 - **Text:** #FFFFFF or #000000
 
 Created with :heart: by Artilleria Pesada's team.
