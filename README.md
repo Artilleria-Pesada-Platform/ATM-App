@@ -11,7 +11,8 @@ This README was created to share relevant info about the proyect
 - **Main:** #063978
 - **Black:** #01224A
 - **Contrast:** #C98200
-- **White:** #1D69C4
+- **Light:** #1D69C4
+- **White:** #FDF7EB
 - **Contrast2:** #5E3F05
 - **Text:** #FFFFFF or #000000
 
