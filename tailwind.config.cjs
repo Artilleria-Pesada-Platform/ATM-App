@@ -15,6 +15,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        white: "#FDF7EB",
+        contrast: "#5E3F05",
+        card:"#063978"
 
       },
       spacing: {

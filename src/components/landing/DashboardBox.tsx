@@ -5,7 +5,7 @@ type propType = {
 
 export const DashboardBox = ({titulo}:propType) => {
   return (
-    <div className='bg-slate-700 h-10 w-60 m-auto'>
+    <div className='bg-card text-white h-10 w-60 rounded-md hover:mb-5 ease-in duration-300 ease-out p-6'>
       <span>
         DashboardBox
       </span>
