@@ -15,6 +15,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        white: "#FDF7EB",
+        contrast: "#5E3F05",
+        card:"#063978",
+        blueDark:"#063978"
 
       },
       spacing: {
@@ -61,7 +65,7 @@ module.exports = {
         80: "320px",
         96: "384px",
         97.5: "390px",
-        120: "480px",
+        120: "430px",
         150: "600px",
         160: "640px",
         175: "700px",
@@ -136,6 +140,8 @@ module.exports = {
           "Times",
           "serif",
         ],
+        sansef: ['Helvetica', 'Arial', 'sans-serif'],
+        // monstserrat: ['Monstserrat'],
         mono: ["ui-monospace", "Menlo", "Consolas", "monospace"],
       },
       fontSize: {
