@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
     "primeicons": "^6.0.1",
     "primereact": "^8.6.1",
     "react": "^18.2.0",

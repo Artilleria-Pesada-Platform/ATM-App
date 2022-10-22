@@ -11,9 +11,9 @@ export const DashboardBox = ({titulo, logo, link}:propType) => {
     <NavLink to={link} className="no-underline">
       <div className='bg-card text-white h-10 w-60 rounded-md sm:hover:mb-5 ease-in duration-300 ease-out p-6'>
       <span>
-        DashboardBox
+        {titulo}
       </span>
-      {titulo}
+      
       <div className=''>
         <img className = "h-20"src = {logo}></img>
       </div>
