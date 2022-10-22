@@ -9,7 +9,7 @@ type propType = {
 export const DashboardBox = ({titulo, logo, link}:propType) => {
   return (
     <NavLink to={link} className="no-underline">
-      <div className='bg-card text-white h-10 w-60 rounded-md sm:hover:mb-5 ease-in duration-300 ease-out p-6'>
+      <div className='bg-card text-white h-24 w-60 rounded-md sm:hover:mb-5 ease-in duration-300 ease-out p-6'>
       <span>
         {titulo}
       </span>

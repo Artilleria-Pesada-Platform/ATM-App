@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       colors: {
         white: "#FDF7EB",
+        light: "#C98200",
         contrast: "#5E3F05",
         card:"#063978",
         blueDark:"#063978"
@@ -192,7 +193,7 @@ module.exports = {
     },
   },
   corePlugins: {
-    preflight: false,
+    preflight: true,
     backgroundOpacity: false,
     borderOpacity: false,
     boxShadow: false,

@@ -1,6 +1,7 @@
 import { DashboardBox } from '../components/landing/DashboardBox'
 import LogoAP from "./../assets/LogoAP.svg"
 import logoPl from "./../assets/logo-pl.png";
+import 'primeicons/primeicons.css';
 
 export const LandingPage = () => {
   return (
@@ -14,7 +15,7 @@ export const LandingPage = () => {
         </div>
 
         <div className=' h-4/6 w-120 sm:w-150 md:w-175 m-auto flex flex-col justify-around font-sansef'>
-          <div className='bg-slate-400 h-1/2 flex flex-col sm:flex-row justify-around items-center '>
+          <div className='h-1/2 flex flex-col sm:flex-row justify-around items-center '>
             <DashboardBox titulo='Analista' logo={logoPl} link = "/navigation"></DashboardBox>
             <DashboardBox titulo='Gerente de Mantenimiento' logo={logoPl} link = "/gerente"></DashboardBox>
           </div>
