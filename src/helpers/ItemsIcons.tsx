@@ -19,8 +19,6 @@ interface props {
 export const ItemsIcons = ({icon, name}:props) => {
 
   const [iconsStatus, setIconsStatus] = useRecoilState(iconStatus)
-  console.log("uno",iconsStatus)
-
 
   return (
     <div className= {`pl-5 w-17 hover:bg-light ${iconsStatus[name] ? "bg-light": "" }`}>

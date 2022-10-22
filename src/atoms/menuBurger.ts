@@ -8,7 +8,7 @@ export const menuBurgerStatus = atom({
   export const iconStatus = atom({
     key: 'icon',
     default: {
-      "Analisis": true,
+      "Analisis": false,
       "Gerencia": false,
       "Cliente": false,
       "Mapas": false,

@@ -16,12 +16,12 @@ export const LandingPage = () => {
 
         <div className=' h-4/6 w-120 sm:w-150 md:w-175 m-auto flex flex-col justify-around font-sansef'>
           <div className='h-1/2 flex flex-col sm:flex-row justify-around items-center '>
-            <DashboardBox titulo='Analista' logo={logoPl} link = "/navigation"></DashboardBox>
-            <DashboardBox titulo='Gerente de Mantenimiento' logo={logoPl} link = "/gerente"></DashboardBox>
+            <DashboardBox titulo='Analista' logo={logoPl} link = "/Analisis"></DashboardBox>
+            <DashboardBox titulo='Gerente de Mantenimiento' logo={logoPl} link = "/Gerencia"></DashboardBox>
           </div>
           <div className='h-1/2 flex flex-col sm:flex-row justify-around items-center'>
-            <DashboardBox titulo='Cliente Empresarial' logo={logoPl} link = "/cliente"></DashboardBox>
-            <DashboardBox titulo='Mapas' logo={logoPl} link = "/mapa"></DashboardBox>
+            <DashboardBox titulo='Cliente Empresarial' logo={logoPl} link = "/Cliente"></DashboardBox>
+            <DashboardBox titulo='Mapas' logo={logoPl} link = "/Mapas"></DashboardBox>
           </div>
         </div> 
         <footer className="static bg-blueDark h-10 rounded-t-full font-roboto flex">
