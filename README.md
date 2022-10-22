@@ -4,7 +4,8 @@ This README was created to share relevant info about the proyect
 
 ## Fonts options:
 
-- **Sans**
+- **Sans-serif**
+- **Montserrat**
 
 ## Colors:
 
