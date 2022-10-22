@@ -2,22 +2,27 @@ import React, { useEffect } from 'react'
 import { useSetRecoilState } from 'recoil'
 import { iconStatus } from '../atoms/menuBurger'
 
-export const Analisis = () => {
+type props = {
+  name:string
+}
+
+export const Construccion = () => {
 
   const setIconsStatus= useSetRecoilState(iconStatus);
 
   useEffect(()=> {
-    setIconsStatus((anterior) => ({
-      ...anterior,
-      "Analisis":true,
+    setIconsStatus({
+      "Analisis":false,
       "Gerencia": false,
       "Cliente": false,
       "Mapas": false
     }
-    ))
+    )
   }, [])
 
   return (
-    <div>Analisis</div>
+    <div className='p-16'>
+        <span className='font-serif text-xl'>{"Lo sentimos, esta página sigue en construcción..."}</span>
+    </div>
   )
 }

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { iconStatus } from "../atoms/menuBurger";
 
@@ -12,15 +13,19 @@ let tipe:iconOptions ;
 
 interface props {
     name: keyof typeof tipe;
-    icon:string
+    icon:string;
 }
 
 export const Items = ({icon, name}:props) => {
 
   const [iconsStatus, setIconsStatus] = useRecoilState(iconStatus)
 
+  const navegar = () => {
+
+  }
+
   return (
-    <div className={`flex flex-row content-center ml-5 w-28 hover:bg-light  ${iconsStatus[name] ? "bg-light": "" }`}>
+    <NavLink to = {"/Navigation/"+name} className={`flex flex-row content-center ml-5 w-28 hover:bg-light  ${iconsStatus[name] ? "bg-light": "" }`} onClick={navegar}>
         <div>
             <img className='w-7  mr-2' src={icon}></img>
         </div>
@@ -28,6 +33,6 @@ export const Items = ({icon, name}:props) => {
           <span className='text-white'>{name}</span>
         </div>
         
-    </div>
+    </NavLink>
   )
 }

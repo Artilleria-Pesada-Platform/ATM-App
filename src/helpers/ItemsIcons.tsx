@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { iconStatus } from "../atoms/menuBurger";
 
@@ -21,8 +22,8 @@ export const ItemsIcons = ({icon, name}:props) => {
   const [iconsStatus, setIconsStatus] = useRecoilState(iconStatus)
 
   return (
-    <div className= {`pl-5 w-17 hover:bg-light ${iconsStatus[name] ? "bg-light": "" }`}>
+    <NavLink to = {"/Navigation/" + name} className= {`pl-5 w-17 hover:bg-light ${iconsStatus[name] ? "bg-light": "" }`}>
         <img className='w-7' src={icon}></img>
-    </div>
+    </NavLink>
   )
 }
