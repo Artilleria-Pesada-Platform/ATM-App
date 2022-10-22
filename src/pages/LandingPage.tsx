@@ -11,10 +11,10 @@ export const LandingPage = () => {
           <div className='w-20 my-1'>
             <img src={LogoAP}></img>
           </div>
-          <span className='m-auto text-xl uppercase font-roboto'>Artillería Pesada ATM</span>
+          <span className='m-auto text-xl uppercase font-roboto'>Trinchera de cajeros</span>
         </div>
 
-        <div className=' h-4/6 w-120 sm:w-150 md:w-175 m-auto flex flex-col justify-around font-sansef'>
+        <div className=' h-4/6 w-120 sm:w-150 md:w-175 m-auto flex flex-col justify-around font-roboto'>
           <div className='h-1/2 flex flex-col sm:flex-row justify-around items-center '>
             <DashboardBox titulo='Analista' logo={logoPl} link = "/Analisis"></DashboardBox>
             <DashboardBox titulo='Gerente de Mantenimiento' logo={logoPl} link = "/Gerencia"></DashboardBox>
