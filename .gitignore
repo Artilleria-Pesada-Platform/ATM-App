@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+APTrincherasDeCajeros
 
 # Editor directories and files
 .vscode/*
