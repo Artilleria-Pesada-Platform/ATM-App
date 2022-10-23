@@ -1,4 +1,5 @@
 import LogoAP from "./../assets/LogoAP.svg"
+import LogoMenu from "./../assets/media/MenuIcon.svg"
 import 'primeicons/primeicons.css';
 import { useRecoilState } from "recoil";
 import { SideBar } from "../components/navigation/SideBar";
@@ -20,8 +21,8 @@ export const Navigation = () => {
 
             <div className={`flex h-screen flex-col ${menuStatus ? 'w-48' : 'w-20'} transition-all duration-300 sticky top-0`}>
                 <div className='h-20 bg-blueDark text-white w-full flex '>
-                    <div className='w-20 my-1 mx-auto shadow-xl hover:shadow-2xl'>
-                        <img src={LogoAP} onClick={cambiarMenuStatus}></img>
+                    <div className='w-20 my-auto mx-auto'>
+                        <img src={LogoMenu} className='h-7 m-auto content-center' onClick={cambiarMenuStatus}></img>
                     </div>
                 </div>
 
