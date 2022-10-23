@@ -19,7 +19,7 @@ export const Navigation = () => {
     return (
         <div className="flex">
 
-            <div className={`flex h-screen flex-col ${menuStatus ? 'w-48' : 'w-20'} transition-all duration-300 sticky top-0`}>
+            <div className={`flex h-screen flex-col ${menuStatus ? 'w-48' : 'w-20'} transition-all duration-500 sticky top-0 z-10`}>
                 <div className='h-20 bg-blueDark text-white w-full flex '>
                     <div className='w-20 my-auto mx-auto'>
                         <img src={LogoMenu} className='h-7 m-auto content-center' onClick={cambiarMenuStatus}></img>
@@ -36,7 +36,7 @@ export const Navigation = () => {
             </div>
 
             <div className="w-full">
-                <div className='h-20 bg-blueDark text-white w-full flex sticky top-0'>
+                <div className='h-20 bg-blueDark text-white w-full flex sticky top-0  z-10'>
                     {/* <div className='my-5 ml-10'>
                     <i className="pi pi-bars invisible" style={{'fontSize': '2em'}} onClick={cambiarMenuStatus}></i>
                 </div> */}
