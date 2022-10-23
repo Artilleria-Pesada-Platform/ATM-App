@@ -6,6 +6,8 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api"
 import { PackedBubble } from '../components/shared/charts/PackedBubble';
 import { BarBasic } from '../components/shared/charts/BarBasic';
 import { transacciones } from '../data/transacciones';
+import { Pie } from '../components/shared/charts/Pie';
+import { transaccionesPorTipo } from '../components/gerencia/pieCharts';
 
 export const Gerencia = () => {
 
@@ -45,7 +47,7 @@ export const Gerencia = () => {
       <div className='flex flex-row h-3/12 w-6/6 space-x-3 m-3'>
 
         <div className='rounded-lg bg-auxiliar w-1/4'>
-          <BarBasic/>
+          <Pie options = {transaccionesPorTipo} />
         </div>
         <div className='rounded-lg bg-auxiliar w-1/4'>
           <BarBasic/>

@@ -13,7 +13,7 @@ export const PackedBubble = () => {
             height: '120%'
         },
         title: {
-            text: 'Carbon emissions around the world (2014)'
+            text: 'Fallas por región y estado (Presionar tabla)'
         },
         tooltip: {
             useHTML: true,
@@ -22,7 +22,7 @@ export const PackedBubble = () => {
         plotOptions: {
             packedbubble: {
                 minSize: '30%',
-                maxSize: '100%',
+                maxSize: '120%',
                 zMin: 0,
                 zMax: 1000,
                 layoutAlgorithm: {
