@@ -1,11 +1,33 @@
-## Welcome to Artillería Pesada repo - hackaton BBVA 2022
+## Bienvenidos al repo de Artillería Pesada - hackathon BBVA 2022
 
-This README was created to share relevant info about the proyect
+En este Readme encontrarán las instrucciones para echarle un ojo a nuestro proyecto
 
-## Fonts options:
+## Video Demo YouTube (3 min)
 
-- **Sans-serif**
-- **Montserrat**
+https://youtu.be/ohNAio6Fhzs
+
+## Para probar el sitio web
+
+https://bbva-latam-hack22mex-5001.uc.r.appspot.com/
+
+## Para probar el chatbot
+
+- Agregar el siguiente número: +14155238886
+- Enviarle un WhatsApp diciendo: join difficulty-mud
+- Decirle hola
+- Comenzar a interactuar con el bot
+
+## Repositorio del team
+
+https://github.com/orgs/Artilleria-Pesada-Platform/repositories
+
+## Documentos entregables
+
+https://drive.google.com/drive/folders/1sVirHVfy00ZjiMweyHbty8rCGP_UMpao?usp=sharing
+
+## Video extra con todas las funciones del chatbot (No es el demo oficial):
+
+https://drive.google.com/file/d/1ZNfX0LZXErnMr9AcTvKbSniFJZ25igL-/view?usp=sharing
 
 ## Colors:
 
