@@ -9,7 +9,7 @@ export const Analisis = () => {
   useEffect(()=> {
     setIconsStatus((anterior) => ({
       ...anterior,
-      "Analisis":true,
+      "BBVA":true,
       "Gerencia": false,
       "Cliente": false,
       "Mapas": false

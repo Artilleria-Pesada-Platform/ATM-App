@@ -12,7 +12,7 @@ export const Construccion = () => {
 
   useEffect(()=> {
     setIconsStatus({
-      "Analisis":false,
+      "BBVA":false,
       "Gerencia": false,
       "Cliente": false,
       "Mapas": false

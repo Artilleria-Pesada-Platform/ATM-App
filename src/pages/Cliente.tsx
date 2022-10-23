@@ -11,7 +11,7 @@ export const Cliente = () => {
       ...anterior,
       "Cliente":true,
       "Gerencia": false,
-      "Analisis": false,
+      "BBVA": false,
       "Mapas": false
     }
     ))

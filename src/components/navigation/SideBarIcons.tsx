@@ -9,7 +9,7 @@ import { ItemsIcons } from '../../helpers/ItemsIcons';
 export const SideBarIcons = () => {
   return (
     <div className='mt-5 space-y-5 flex flex-col justify-center'>
-        <ItemsIcons icon = {IconAnalisis} name="Analisis"></ItemsIcons>
+        <ItemsIcons icon = {IconAnalisis} name="BBVA"></ItemsIcons>
         <ItemsIcons icon = {IconGerente} name="Cliente"></ItemsIcons>
         <ItemsIcons icon = {IconCliente} name="Gerencia"></ItemsIcons>
         <ItemsIcons icon = {IconMapas} name="Mapas"></ItemsIcons>

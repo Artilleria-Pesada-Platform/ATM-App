@@ -10,7 +10,7 @@ export const Gerencia = () => {
     setIconsStatus((anterior) => ({
       ...anterior,
       "Gerencia": true,
-      "Analisis": false,
+      "BBVA": false,
       "Cliente": false,
       "Mapas": false
     }

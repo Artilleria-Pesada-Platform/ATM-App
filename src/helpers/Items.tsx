@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import { iconStatus } from "../atoms/menuBurger";
 
 type iconOptions = {
-    "Analisis": false,
+    "BBVA": false,
     "Gerencia": false,
     "Cliente": false,
     "Mapas": false,

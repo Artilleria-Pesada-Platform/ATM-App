@@ -12,7 +12,7 @@ export const Mapas = () => {
       "Mapas":true,
       "Gerencia": false,
       "Cliente": false,
-      "Analisis": false
+      "BBVA": false
     }
     ))
   }, [])
