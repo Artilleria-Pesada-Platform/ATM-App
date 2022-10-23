@@ -7,6 +7,7 @@ import { Password } from 'primereact/password';
 import { TextInputField } from '../../templates/TextInputField';
 import { useEffect, useState } from 'react';
 import { PasswordField } from '../../templates/PasswordField';
+import { NavLink } from 'react-router-dom';
 
 export const FormLogin = () => {
 
@@ -59,7 +60,10 @@ export const FormLogin = () => {
 
             <PasswordField name = "password"></PasswordField>
             
-            <Button className='my-7  w-57 p-button-sm bg-blueDark hover:bg-light' label="Iniciar sesión" type="submit"></Button>
+            <NavLink to="/landing">
+               <Button className='my-7  w-57 p-button-sm bg-blueDark hover:bg-light' label="Iniciar sesión" type="submit"></Button> 
+            </NavLink>
+            
             {/* <span className='mt-2'>¿Olvidaste tu <a href="#">contraseña</a>?</span>
             <span className='mt-6'>¿No tienes cuenta? <a href="#">Crea una.</a></span> */}
         </form>

@@ -12,7 +12,7 @@ export const LandingPage = () => {
           <div className='w-20 my-1'>
             <img src={LogoAP} alt = "ArtilleriaPesadaLogo"></img>
           </div>
-          <span className='m-auto text-xl uppercase  font-normal hover:font-bold'>Trinchera de cajeros APP</span>
+          <span className='m-auto text-xl uppercase  font-normal'>Trinchera de cajeros APP</span>
           <Log></Log>
         </div>
 
