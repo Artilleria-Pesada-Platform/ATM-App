@@ -20,7 +20,7 @@ export const Navigation = () => {
 
             <div className={`flex h-screen flex-col ${menuStatus ? 'w-48' : 'w-20'} transition-all duration-300 sticky top-0`}>
                 <div className='h-20 bg-blueDark text-white w-full flex '>
-                    <div className='w-20 my-1 mx-auto'>
+                    <div className='w-20 my-1 mx-auto shadow-xl hover:shadow-2xl'>
                         <img src={LogoAP} onClick={cambiarMenuStatus}></img>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ export const Navigation = () => {
                     {/* <div className='my-5 ml-10'>
                     <i className="pi pi-bars invisible" style={{'fontSize': '2em'}} onClick={cambiarMenuStatus}></i>
                 </div> */}
-                    <span className='m-auto text-xl uppercase font-roboto'>Artillería Pesada ATM</span>
+                    <span className='m-auto text-xl uppercase'>Trinchera de cajeros APP</span>
                 </div>
                 <Outlet></Outlet>
             </div>

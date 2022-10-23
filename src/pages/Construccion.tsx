@@ -22,7 +22,7 @@ export const Construccion = () => {
 
   return (
     <div className='p-16'>
-        <span className='font-serif text-xl'>{"Lo sentimos, esta página sigue en construcción..."}</span>
+        <span className='text-xl'>{"Lo sentimos, esta página sigue en construcción..."}</span>
     </div>
   )
 }
