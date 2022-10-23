@@ -17,7 +17,7 @@ const AppRouter = () => {
                 <Route path="/landing" element={<LandingPage />} />
                 <Route path="/mapas" element={<Navigate to={"/mapas"} />} />
                 <Route path="/Navigation" element={<Navigation></Navigation>}>
-                    <Route path="BBVA" element={<BBVA></BBVA>}/>
+                    <Route path="BBVA" element={<Construccion></Construccion>}/>
                     <Route path="Gerencia" element={<Gerencia></Gerencia>}/>
                     <Route path="Cliente" element={<Cliente></Cliente>}/>
                     <Route path="Mapas" element={<Mapas></Mapas>}/>

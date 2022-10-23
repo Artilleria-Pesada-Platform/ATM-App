@@ -22,7 +22,7 @@ export const ItemsIcons = ({icon, name}:props) => {
   const [iconsStatus, setIconsStatus] = useRecoilState(iconStatus)
 
   return (
-    <NavLink to = {"/Navigation/" + name} className= {`pl-5 w-17 hover:bg-light ${iconsStatus[name] ? "bg-light": "" }`}>
+    <NavLink to = {"/Navigation/" + name} className= {`ease-in-out duration-300 pl-5 w-17 hover:bg-light ${iconsStatus[name] ? "bg-light": "" }`}>
         <img className='w-7' src={icon}></img>
     </NavLink>
   )
