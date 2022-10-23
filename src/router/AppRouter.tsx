@@ -1,5 +1,5 @@
 import { Route, Routes, Navigate, BrowserRouter } from "react-router-dom"
-import { Analisis } from "../pages/Analisis"
+import { BBVA } from "../pages/BBVA"
 import { Cliente } from "../pages/Cliente"
 import { Construccion } from "../pages/Construccion"
 import { Gerencia } from "../pages/Gerencia"
@@ -17,10 +17,10 @@ const AppRouter = () => {
                 <Route path="/landing" element={<LandingPage />} />
                 <Route path="/mapas" element={<Navigate to={"/mapas"} />} />
                 <Route path="/Navigation" element={<Navigation></Navigation>}>
-                    <Route path="BBVA" element={<Construccion></Construccion>}/>
+                    <Route path="BBVA" element={<BBVA></BBVA>}/>
                     <Route path="Gerencia" element={<Gerencia></Gerencia>}/>
-                    <Route path="Cliente" element={<Construccion></Construccion>}/>
-                    <Route path="Mapas" element={<Construccion></Construccion>}/>
+                    <Route path="Cliente" element={<Cliente></Cliente>}/>
+                    <Route path="Mapas" element={<Mapas></Mapas>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
-import { useSetRecoilState } from 'recoil';
-import { iconStatus } from '../atoms/menuBurger';
+import { useSetRecoilState } from 'recoil'
+import { iconStatus } from '../atoms/menuBurger'
 
-export const Gerencia = () => {
+export const BBVA = () => {
 
-  const setIconsStatus = useSetRecoilState(iconStatus);
+  const setIconsStatus= useSetRecoilState(iconStatus);
 
-  useEffect(() => {
+  useEffect(()=> {
     setIconsStatus((anterior) => ({
       ...anterior,
-      "Gerencia": true,
-      "BBVA": false,
+      "BBVA":true,
+      "Gerencia": false,
       "Cliente": false,
       "Mapas": false
     }
@@ -19,7 +19,7 @@ export const Gerencia = () => {
 
   return (
     <div className='flex flex-col h-screen text-tb'>
-      <div className='flex flex-row h-24 w-6/6 space-x-3 m-3'>
+      <div className='flex flex-row h-1/6 w-6/6 space-x-3 m-3'>
         <div className='rounded-lg bg-auxiliar w-1/3'>
             <span>ATMS activos</span>
         </div>
@@ -30,15 +30,18 @@ export const Gerencia = () => {
             <span>ATMS con fallas</span>
         </div>
       </div>
-      <div className='flex flex-row h-8/12 w-6/6 m-3 space-x-3'>
+      <div className='flex flex-row h-1/2 w-6/6 m-3 space-x-3'>
         <div className='rounded-lg bg-auxiliar w-2/3'>
           <span>Datos de fallas por región</span>
         </div>
         <div className='rounded-lg bg-auxiliar w-1/3'>
           <span>Gráfico de fallas por mes</span>
         </div>
-      </div>
 
+      </div>
+      <div className='h-1/3 rounded-lg bg-auxiliar w-6/6 m-3'>
+        <span>Top 3 fallas</span>
+      </div>
     </div>
   )
 }
