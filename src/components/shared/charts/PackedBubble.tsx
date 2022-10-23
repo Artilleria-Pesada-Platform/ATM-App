@@ -13,7 +13,7 @@ export const PackedBubble = () => {
             height: '120%'
         },
         title: {
-            text: 'Fallas por región y estado (Presionar tabla)'
+            text: 'Fallas por región y estado (Presionar labels)'
         },
         tooltip: {
             useHTML: true,

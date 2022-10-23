@@ -24,7 +24,7 @@ export const Mapas = () => {
   }, [])
   return  isLoaded? (
     <div className='flex flex-col h-10/12 text-tb'>
-      <DashboardTop/>
+
       <div className='flex flex-row h-11/12 w-6/6 m-3 space-x-3'>
         {/* MAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */}
         <div className='rounded-lg bg-auxiliar w-full'> 

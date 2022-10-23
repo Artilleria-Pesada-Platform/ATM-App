@@ -1,15 +1,22 @@
-import React, { useEffect } from 'react'
-import { useSetRecoilState } from 'recoil'
-import { iconStatus } from '../atoms/menuBurger'
+import { useEffect } from 'react'
+import { useSetRecoilState } from 'recoil';
+import { iconStatus } from '../atoms/menuBurger';
+import { DashboardTop } from '../components/shared/DashboardTop';
+import { PackedBubble } from '../components/shared/charts/PackedBubble';
+import { transacciones } from '../data/transacciones';
+import { Pie } from '../components/shared/charts/Pie';
+import { depositoPorDivision, retirosPorDivision, topCincoTransaccionesEstados, transaccionesPorTipo } from '../components/gerencia/pieCharts';
+import { MapGerencia } from '../components/gerencia/MapGerencia';
+import { MapBBVA } from '../components/BBVA/MapBBVA';
 
 export const BBVA = () => {
 
-  const setIconsStatus= useSetRecoilState(iconStatus);
+  const setIconsStatus = useSetRecoilState(iconStatus);
 
-  useEffect(()=> {
+  useEffect(() => {
     setIconsStatus((anterior) => ({
       ...anterior,
-      "BBVA":true,
+      "BBVA": true,
       "Gerencia": false,
       "Cliente": false,
       "Mapas": false
@@ -18,30 +25,36 @@ export const BBVA = () => {
   }, [])
 
   return (
-    <div className='flex flex-col h-screen text-tb'>
-      <div className='flex flex-row h-1/6 w-6/6 space-x-3 m-3'>
-        <div className='rounded-lg bg-auxiliar w-1/3'>
-            <span>ATMS activos</span>
-        </div>
-        <div className='rounded-lg bg-auxiliar w-1/3'>
-            <span>ATMS con fallas</span>
-        </div>
-        <div className='rounded-lg bg-auxiliar w-1/3'>
-            <span>ATMS con fallas</span>
-        </div>
-      </div>
-      <div className='flex flex-row h-1/2 w-6/6 m-3 space-x-3'>
-        <div className='rounded-lg bg-auxiliar w-2/3'>
-          <span>Datos de fallas por región</span>
-        </div>
-        <div className='rounded-lg bg-auxiliar w-1/3'>
-          <span>Gráfico de fallas por mes</span>
+    <div className='flex flex-col text-tb'>
+
+      <DashboardTop data={transacciones} />
+
+      <div className='flex flex-row h-96 w-6/6 mx-3 space-x-3'>
+
+        <MapBBVA></MapBBVA>
+        <div className='rounded-lg bg-auxiliar h-96 w-4/12'>
+          <PackedBubble />
         </div>
 
       </div>
-      <div className='h-1/3 rounded-lg bg-auxiliar w-6/6 m-3'>
-        <span>Top 3 fallas</span>
+
+      <div className='flex flex-row h-3/12 w-6/6 space-x-3 m-3'>
+
+        <div className='rounded-lg w-1/4'>
+          <Pie options={transaccionesPorTipo} />
+        </div>
+        <div className='rounded-lg w-1/4'>
+          <Pie options={depositoPorDivision} />
+        </div>
+        <div className='rounded-lg w-1/4'>
+          <Pie options={retirosPorDivision} />
+        </div>
+        <div className='rounded-lg w-1/4'>
+          <Pie options={topCincoTransaccionesEstados} />
+        </div>
+
       </div>
+
     </div>
   )
 }
