@@ -28,7 +28,7 @@ return (
     <LoadScript
       googleMapsApiKey="AIzaSyCOvMQg6_0WDVnvGYP4jqgR0domTcKIvOk"
     >
-      <GoogleMap zoom={5} center={{ lat: 22, lng: -101 }} mapContainerStyle={containerStyle}>
+      <GoogleMap zoom={4} center={{ lat: 22, lng: -101 }} mapContainerStyle={containerStyle}>
         <MarkerFKey></MarkerFKey>
       </GoogleMap>
     </LoadScript>

@@ -1,16 +1,34 @@
 import LogoAP from "./../assets/LogoAP.svg"
 import LogoMenu from "./../assets/media/MenuIcon.svg"
 import 'primeicons/primeicons.css';
-import { useRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import { SideBar } from "../components/navigation/SideBar";
 import { SideBarIcons } from "../components/navigation/SideBarIcons";
-import { menuBurgerStatus } from "../atoms/menuBurger";
+import { iconStatus, menuBurgerStatus } from "../atoms/menuBurger";
 import { Outlet } from "react-router-dom";
+
 
 export const Navigation = () => {
 
 
     const [menuStatus, setMenuStatus] = useRecoilState(menuBurgerStatus)
+
+    const [iconsStatus, setIconsStatus] = useRecoilState(iconStatus);
+
+    const Titulo = () => {
+        if(iconsStatus.BBVA){
+            return "Análisis de Fallas"
+        }
+        if(iconsStatus.Gerencia){
+            return "Gerencia de Mantenimiento"
+        }
+        if(iconsStatus.Cliente){
+            return "Cliente Empresarial"
+        }
+        if(iconsStatus.Mapas){
+            return "Mapas"
+        }
+    }
 
     const cambiarMenuStatus = () => {
         setMenuStatus(!menuStatus)
@@ -40,7 +58,7 @@ export const Navigation = () => {
                     {/* <div className='my-5 ml-10'>
                     <i className="pi pi-bars invisible" style={{'fontSize': '2em'}} onClick={cambiarMenuStatus}></i>
                 </div> */}
-                    <span className='m-auto text-xl uppercase'>Trinchera de cajeros APP</span>
+                    <span className='m-auto text-xl uppercase'>{Titulo()}</span>
                 </div>
                 <Outlet></Outlet>
             </div>
