@@ -10,6 +10,8 @@ https://youtu.be/ohNAio6Fhzs
 
 https://bbva-latam-hack22mex-5001.uc.r.appspot.com/
 
+Colocar cualquier user y contraseña. No tiene validación de datos.
+
 ## Para probar el chatbot
 
 - Agregar el siguiente número: +14155238886
