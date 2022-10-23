@@ -17,8 +17,8 @@ export const LandingPage = () => {
         </div>
         <div className=' h-4/6 w-120 sm:w-150 md:w-200 m-auto flex flex-col justify-around'>
           <div className='h-1/2 flex flex-col sm:flex-row justify-around items-center '>
-            <DashboardBox titulo='BBVA' logo={logoPl} link = "/BBVA"></DashboardBox>
             <DashboardBox titulo='Gerente de Mantenimiento' logo={logoPl} link = "/Gerencia"></DashboardBox>
+            <DashboardBox titulo='BBVA' logo={logoPl} link = "/BBVA"></DashboardBox>
           </div>
           <div className='h-1/2 flex flex-col sm:flex-row justify-around items-center'>
             <DashboardBox titulo='Cliente Empresarial' logo={logoPl} link = "/Cliente"></DashboardBox>
