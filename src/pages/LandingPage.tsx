@@ -2,8 +2,6 @@ import { DashboardBox } from '../components/landing/DashboardBox'
 import LogoAP from "./../assets/LogoAP.svg"
 import logoPl from "./../assets/logo-pl.png";
 import 'primeicons/primeicons.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 import { Log } from '../components/shared/Log';
 
 export const LandingPage = () => {
