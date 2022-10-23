@@ -5,12 +5,12 @@ import HC_more from 'highcharts/highcharts-more' //module
 HC_more(Highcharts) //init module
 
 
-export const PackedBubble = () => {
+export const PackedBubbleGerencia = () => {
 
     const options = {
         chart: {
             type: 'packedbubble',
-            height: '100%'
+            height: '80%'
         },
         title: {
             text: 'Fallas por región y estado (Presionar labels)'

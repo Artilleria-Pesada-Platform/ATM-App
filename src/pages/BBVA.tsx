@@ -1,13 +1,12 @@
 import { useEffect } from 'react'
 import { useSetRecoilState } from 'recoil';
 import { iconStatus } from '../atoms/menuBurger';
-import { DashboardTop } from '../components/shared/DashboardTop';
 import { PackedBubble } from '../components/shared/charts/PackedBubble';
-import { transacciones } from '../data/transacciones';
 import { Pie } from '../components/shared/charts/Pie';
 import { depositoPorDivision, retirosPorDivision, topCincoTransaccionesEstados, transaccionesPorTipo } from '../components/gerencia/pieCharts';
-import { MapGerencia } from '../components/gerencia/MapGerencia';
 import { MapBBVA } from '../components/BBVA/MapBBVA';
+import { tecnicos } from '../data/tecnicos';
+import { DashboardTopBBVA } from '../components/shared/DashboardTopBBVA';
 
 export const BBVA = () => {
 
@@ -27,7 +26,7 @@ export const BBVA = () => {
   return (
     <div className='flex flex-col text-tb'>
 
-      <DashboardTop data={transacciones} />
+      <DashboardTopBBVA data={tecnicos} />
 
       <div className='flex flex-row h-96 w-6/6 mx-3 space-x-3'>
 
@@ -39,19 +38,6 @@ export const BBVA = () => {
       </div>
 
       <div className='flex flex-row h-3/12 w-6/6 space-x-3 m-3'>
-
-        <div className='rounded-lg w-1/4'>
-          <Pie options={transaccionesPorTipo} />
-        </div>
-        <div className='rounded-lg w-1/4'>
-          <Pie options={depositoPorDivision} />
-        </div>
-        <div className='rounded-lg w-1/4'>
-          <Pie options={retirosPorDivision} />
-        </div>
-        <div className='rounded-lg w-1/4'>
-          <Pie options={topCincoTransaccionesEstados} />
-        </div>
 
       </div>
 

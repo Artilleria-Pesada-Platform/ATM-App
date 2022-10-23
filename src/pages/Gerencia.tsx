@@ -8,6 +8,7 @@ import { Pie } from '../components/shared/charts/Pie';
 import { depositoPorDivision, retirosPorDivision, topCincoTransaccionesEstados, transaccionesPorTipo } from '../components/gerencia/pieCharts';
 import { MapGerencia } from '../components/gerencia/MapGerencia';
 import { MapBBVA } from '../components/BBVA/MapBBVA';
+import { PackedBubbleGerencia } from '../components/shared/charts/PackedBubbleGerencia';
 
 export const Gerencia = () => {
 
@@ -32,8 +33,8 @@ export const Gerencia = () => {
       <div className='flex flex-row h-96 w-6/6 mx-3 space-x-3'>
 
         <MapBBVA></MapBBVA>
-        <div className='rounded-lg bg-auxiliar h-96 w-4/12'>
-          <PackedBubble />
+        <div className='rounded-lg h-96 w-4/12'>
+          <PackedBubbleGerencia />
         </div>
 
       </div>
